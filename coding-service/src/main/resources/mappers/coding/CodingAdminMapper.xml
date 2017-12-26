@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.coding.traning.biz.dao.CodingAdminMapper">
+    <select id="queryCodingUser" parameterType="java.util.Map" resultType="java.util.Map">
+        SELECT
+          LOGIN_NAME,
+          USER_NAME,
+          LOGIN_PWD,
+          REG_TIME,
+          LAST_LOGIN_TIME,
+          HEAD_PIC,
+          WECHAR_NUM,
+          QQ_NUM,
+          PHONE,
+          EMAIL,
+          PROVINCE,
+          CITY,
+          COUNTY,
+          SEX,
+          BIRTHDAY,
+          ADDRESS,
+          F_MOTTO
+        FROM CODING_USER
+        WHERE 1=1
+        <if test="loginName !=null and loginName!= ''">
+           AND LOGIN_NAME = #{loginName}
+        </if>
+        <if test="phone !=null and phone!= ''">
+            AND PHONE = #{phone}
+        </if>
+        <if test="loginPwd !=null and loginPwd!= ''">
+            AND LOGIN_PWD= #{loginPwd}
+        </if>
+        <if test="sex !=null and sex!= ''">
+            AND SEX= #{sex}
+        </if>
+        <if test="userName !=null and userName!= ''">
+            AND USER_NAME LIKE CONCAT('%', #{userName},'%')
+        </if>
+        ORDER BY USER_NAME
+    </select>
+
+    <select id="queryMenuList" parameterType="java.util.Map" resultType="java.util.Map">
+        SELECT
+          MENU_NUM,
+          MENU_NAME,
+          MENU_TYPE,
+          MENU_PARENT,
+          MENU_URL,
+          MENU_ORDER
+        FROM CODING_MENU A
+        WHERE 1=1
+        <if test="menuName !=null and menuName!= ''">
+            AND MENU_NAME LIKE CONCAT('%', #{menuName},'%')
+        </if>
+        <if test="menuType !=null and menuType!= ''">
+            AND MENU_TYPE= #{menuType}
+        </if>
+        <if test="menuParent !=null and menuParent!= ''">
+            AND MENU_PARENT IN(
+              SELECT MENU_NUM
+              FROM CODING_MENU B
+              WHERE A.MENU_PARENT = B.MENU_NUM
+              WHERE B.MENU_NAME LIKE CONCAT('%', #{menuName},'%')
+            )
+        </if>
+        <if test="loginName != 'Admin'">
+            AND MENU_NUM IN (
+            SELECT MENU_NUM
+            FROM CODING_MENU_USER B
+            WHERE A.MENU_NUM = B.MENU_NUM
+            WHERE B.LOGIN_NAME = #{loginName}
+            )
+        </if>
+        ORDER BY MENU_ORDER
+    </select>
+</mapper>
