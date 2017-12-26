@@ -1,0 +1,282 @@
+.font3rem { font-size: 0.3rem;}
+.container { padding:0 0.3rem; }
+.box.no-border { border: 0;}
+.user { height: 2.6rem;background: url("../img/user/user-bg.png") no-repeat;  background-size: 100%; font-size: 0.2rem;  color: #fff;}
+.user-setup {padding-top: 0.3rem;position: relative;}
+.user-setup a { font-size: 0.3rem; color: #fff; padding-left: 0.3rem;}
+.user-setup .msg {position: absolute; right: 0.3rem; top: 0.3rem; width: 0.4rem;height: 0.4rem;  background: url("../img/user/msg.png") no-repeat;background-size: 100%;text-align: right;}
+.user-setup i {font-size: 0.18rem;background-color: #fff; color: #3a95db; display: inline-block;width: 0.27rem; height: 0.27rem;margin-right: -0.135rem;line-height: 0.27rem;text-align: center;border-radius: 50%;}
+.user-info {position: relative;margin-top: 0.25rem; padding-left: 1.75rem;font-size: 0.24rem;}
+.user-info .img { width: 1.2rem;height: 1.2rem;position: absolute;left: 0.3rem; top: 50%;margin-top: -0.6rem;}
+.user-info img { border-radius: 50%;}
+.user-info h3 {font-size: 0.38rem;}
+.user-info span {  margin: 0.18rem 0;}
+.user-sex {position: absolute;  bottom: -3px;  right: 3px;  width: 0.3rem;  height: 0.3rem;  z-index: 2;  background-repeat: no-repeat;}
+.user-sex.male {background-image: url("../img/user/male.png"); background-size: 100%;}
+/** 我的徽章  **/
+.user-honour {padding: 0 0.3rem;}
+.user-honour .title {  padding: 0.22rem 0.3rem; font-size: 0.3rem; margin-left: -0.3rem;margin-right: -0.3rem;border-bottom: solid 1px #dedede;position: relative;}
+.user-honour .title span { padding-left: 0.5rem; display: inline-block;}
+.user-honour .title.badge span { background: url("../img/user/icon-badge.png") no-repeat; background-size: auto 100%;}
+.user-honour .title.volunteer span {  background: url("../img/user/icon-mine.png") no-repeat; background-size: auto 100%;}
+.user-honour .title .tail {position: absolute;right: 0.3rem;top: 0.22rem;color: #3494de;font-size: 0.26rem;}
+.user-honour .title .tail.updown {  width: 0.38rem;height: 0.38rem;  background: url("../img/user/icon-updown.png") no-repeat;background-size: 100%;top: 50%;margin-top: -0.19rem;}
+
+/** 我的徽章图标  **/
+.my-badge .badge-container{padding:0;}
+.my-badge .hd h2{text-align:center;}
+
+.badge-container {font-size: 0; padding: 0.4rem 0; margin-right: -0.3rem; overflow: hidden;}
+.badge-container:after { content: "";height: 0; display: block;clear: both;}
+.badge-container img {  width: .8rem; margin:0 auto 0.05rem; display: block;}
+.badge-container .swiper-item {font-size: 0.24rem; padding: 0 0.045rem;}
+.badge-container p { white-space: nowrap; text-align: center;display: block;}
+.user-detail {font-size: 0.3rem;display: -webkit-flex;display: flex;padding: 0.5rem 0 0.4rem 0;text-align: center;color: #333;}
+.user-detail img {width: 0.7rem;height: 0.7rem;}
+.user-detail .serve-time {-webkit-flex: 1;flex: 1;}
+.user-detail .inner {font-size: 0.48rem;color: #3a95db;height: 0.7rem;}
+.user-detail .text {display: inline-block; position: relative;}
+.user-detail .trend {position: absolute;left: 100%;top: 5px;margin-left: 5px;width: 6px;height: 8px;background-color: #1bb37f;}
+.user-detail .trend:after {content: "";position: absolute;top: 100%;left: 50%;width: 0; height: 0;border: solid 6px;margin-left: -6px;border-color: #1bb37f transparent transparent transparent;}
+.user-detail .item {color: #333;width: 2.1rem;}
+.user-relative {font-size: 0.3rem;margin-right: -0.3rem;}
+.user-relative span { height: 0.38rem;padding-left: 0.4rem;}
+
+.user-relative .file span {background: url("../img/user/mine-file.png") no-repeat; background-size: auto 100%;}
+.user-relative .exchange span {background: url("../img/user/mine-exchange.png") no-repeat;background-size: auto 100%;}
+.user-relative .certificate span {background: url("../img/user/mine-certificate.png") no-repeat;background-size: auto 100%;}
+.user-relative .password span { background: url("../img/user/mine-pwd.png") no-repeat; background-size: auto 100%;}
+.user-relative .show span {  background: url("../img/user/mine-show.png") no-repeat; background-size: auto 100%;}
+.user-relative a { display: block;position: relative;padding: 0.25rem 0;border-top: solid 1px #dedede;color: #666;}
+.user-relative a:after {  content: "";position: absolute; right: 0.3rem;top: 0;bottom: 0;width: 0.2rem;height: 0.2rem;border: solid #999;border-width: 1px 1px 0 0;margin: auto; transform: rotate(45deg);}
+/** 可领取徽章 **/
+.receive-badge .hd h2{text-align:center;}
+.receive-badge .item-list li{padding:.3rem 0;line-height:normal;}
+.receive-badge .item-list .table td{vertical-align:top;padding:0;}
+.receive-badge .item-list .info{margin-left:.2rem;}
+.receive-badge .item-list .img{font-size:.24rem;text-align:center;}
+.receive-badge .item-list .img img{width:.8rem;margin-bottom:.05rem;}
+.receive-badge .item-list .name{font-size:.3rem;}
+.receive-badge .item-list .condition{margin-top:.1rem;margin-bottom:.2rem;font-size:.28rem;}
+.receive-badge .item-list .num{font-size:.24rem;color:#999;}
+.receive-badge .item-list .btn-gray{float:right;margin-right:.3rem;padding:0 .3rem;}
+/** 我的组织 **/
+.group {padding-bottom:.2rem;
+  background:url(../img/organization-bg.png) no-repeat center bottom,-webkit-gradient(linear,0% 0%,100% 0%,from(#334cca),to(#3a95db));
+  background:url(../img/organization-bg.png) no-repeat center bottom,-webkit-linear-gradient(left,#334cca,#3a95db);
+  background:url(../img/organization-bg.png) no-repeat center bottom,linear-gradient(left,#334cca, #3a95db);
+  background-size:100%;}
+.group .top-bar{ padding-top: 0.15rem;position: relative; display: block; height: 0.65rem;}
+.group .back { padding-left:0.3rem;background: url("../img/back.png") no-repeat center center;width:1.02rem;height: 0.5rem; display: inline-block; background-size: auto 72%;}
+.group .top-btn{ border: 0;font-size: 0.24rem; position: absolute; top: 0.15rem;right: 0.3rem;background: transparent;color: white; font-size: 0.3rem; }
+.group-manage{display: none; position: absolute;top: 0.75rem;right: 0.3rem; background: #286397;padding:0.1rem 0.2rem ;border-radius: 0.1rem;}
+.group-manage:before{content: ""; position: absolute;bottom:100%;right: 0.3rem; z-index: 5; width:0;height: 0;border: solid 0.1rem; border-color:transparent transparent #286397 transparent;}
+.group-manage a{display: block; color: white; font-size: 0.2rem;margin: 0.15rem 0;}
+
+/**组织标志 **/
+.group-mark{ text-align: center;color: white; font-size: 0.38rem;}
+.group-mark .inner {width:1.3rem;height: 1.3rem; margin: 0 auto; position: relative;text-align: center;}
+.group-mark img {width: 100%;height: 100%; margin: 0 auto;}
+.group-mark input {position: absolute;opacity: 0; top: 0;bottom: 0;left: 0; right: 0;}
+.group-mark p{margin:.4rem 0;}
+
+/*** 组织头部，头像口号等 **/
+.group-head { font-size: 0.24rem; color: white; text-align: center;}
+.group-head h2{ font-size: 0.38rem; margin-top:0.2rem; }
+.group-head img{width: 1.25rem;height: 1.25rem; display: block; margin: -0.1rem auto 0 auto;border: solid 1px #fff; }
+.group-head span {display:inline-block;margin:0 .05rem .1rem;font-size: 0.2rem; background-color: #75afe4;white-space: nowrap; border-radius: 3px; padding: 0.05rem 0.1rem;}
+.group-head p {padding:.1rem .3rem;line-height:normal;}
+/** 组织活动 **/
+.group-activity{line-height: 0.3rem;}
+.group-activity span{position: relative;padding-left: 0.2rem;}
+.group-activity span:before{content: ""; position: absolute;left: 0;top: 50%; width: 0.05rem;display: inline-block;height: 0.4rem; border-radius: 0.025rem; background-color: #3a95db;transform: translateY(-50%);}
+.group-activity i { position: absolute;top:-0.15rem;left: 110%; }
+
+.group-activity a {float: right;font-size: 0.24rem;color: #999;}
+.group-activity a:after{content: "";display: inline-block;width:0.18rem; height: 0.18rem;border: solid 1px;border-color:#999 #999 transparent transparent;transform: rotate(45deg);}
+
+/** 服务时长  组织人数等 **/
+.group-info {font-size: 0;}
+.group-info ul{display: flex;overflow: hidden; text-align: center;}
+.group-info  li{font-size: 0.3rem; position: relative;flex: 1; }
+.group-info  li:before {content: "";position: absolute;left: -1px; width: 1px; top: 50%; height: 0.55rem; margin-top: -0.275rem; z-index: 2; border-left:solid 1px #dedede; }
+.group-info p{ color: #9f9f9f; font-size: 0.24rem;}
+.group-info strong{ color: #333;  font-size: 0.34rem; font-weight: normal;}
+/** 服务范围 **/
+.server-range .hd { font-size: 0.26rem;}
+.server-range .bd { color: #666;}
+/**  注册地/创建日期等 **/
+.bd.group-detail {padding: 0 0 0 0.3rem;overflow: hidden;}
+.group-detail dl {border-top: solid 1px #dedede;padding: 0.3rem 0.3rem 0.3rem 0; margin-top: -1px;}
+.group-detail dt{ float: left;}
+.group-detail dd { float: right; color: #666;}
+.group-detail dl:after { content: "";display: block;height: 0;clear: both;}
+/** 公益信息 **/
+.group-benefit .bd {padding: 0 0.3rem;}
+.group-benefit ul{overflow: hidden;margin-right: -0.3rem;}
+.group-benefit li + li{border-bottom: solid 1px #dedede;}
+.group-benefit a {position: relative; padding: 0.3rem 0;display: block;height: 1rem;padding-left: 0.36rem;}
+.group-benefit a:after{content: "";position: absolute;right: 0.3rem; top: 0;bottom: 0;width: 0.2rem;height: 0.2rem;border: solid 1px; margin: auto; transform: rotate(45deg); border-color: #999 #999 transparent transparent; }
+.group-benefit .donate a{ background: url("../img/donate.png") no-repeat center left;
+background-size: auto 37.5%;}
+/** 组织成员 **/
+.group-member { padding:0 0.3rem;}
+.group-member li{display: table;width:100%;padding: 0.2rem 0;}
+.group-member li + li{border-top:solid 1px #dedede; }
+.group-member .picture { display: table-cell; width:0.9rem; height: 0.9rem; border-radius:50%; overflow: hidden; border: solid 1px #e3e3e3;}
+.group-member img { width:100%;}
+.group-member .info {position: relative; display: table-cell;vertical-align: middle; padding-left:0.3rem;}
+.group-member .operation {display: none; position: absolute;right: 0;top: 50%;transform: translateY(-50%); text-align: right;}
+.group-member .operation button {cursor: pointer; background: transparent;color: #666;border: solid 1px #ccc;font-size: 0.26rem; border-radius: 0.3rem;line-height: 0.6rem;padding: 0 0.2rem;}
+.group-member .operation button + button {margin-left:0.2rem; }
+.group-member .phone {float: right;}
+.group-member .is-admin .name:after{content: ""; display: inline-block;vertical-align: middle;margin-left:0.1rem; background: url("../img/member-admin.png") no-repeat;width: 0.24rem;height: 0.36rem; background-size: 100%;}
+/** 搜索结果 **/
+.sort-content ul {margin-right:-0.3rem;}
+.sort-content li { display: table;width:100%; margin-bottom: 0.35rem; border-bottom:solid 1px #dedede;}
+.sort-content .picture {display: table-cell; vertical-align: top;width:1.3rem;}
+.sort-content img { width: 100%;height: 1.3rem;}
+.sort-content .inner { padding:0 0.3rem; color: #333;}
+.sort-content .inner-text{margin: 0.26rem 0; font-size: 0.24rem;color: #999; }
+.sort-content .inner-text span{height: 0.24rem;margin-right: 0.3rem;}
+.sort-content h3 { font-size: 0.3rem; font-weight: 600;}
+.sort-content p {font-size:.28rem;display:-webkit-box;display:box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;box-orient:vertical;overflow:hidden;text-overflow:ellipsis;}
+.sort-content .info {background: url("../img/city-position.png") no-repeat left center; background-size: auto 100%;}
+
+.box .title{ font-size: 0.3rem;color: #333;}
+.list-tmpl {margin-right:-0.3rem; }
+.list-tmpl li{padding: 0.3rem 0;}
+.list-tmpl li + li{border-top: solid 1px #dedede; }
+.list-tmpl .inner {position: relative; display: table;width: 100%; font-size: 0.3rem; color: #333;}
+.list-tmpl .inner .name { display: table-cell;text-align: left; white-space: nowrap; vertical-align: top;}
+.list-tmpl .inner:after{content: "";display: block;clear: both;height: 0;}
+.list-tmpl .inner-text {display: table-cell;text-align: right; font-size: 0.26rem; padding: 0 0.3rem;}
+.list-tmpl .inner-text input {margin: -0.3rem 0;height:.8rem;line-height:normal;text-align:right;}
+.list-tmpl .inner-text .radiobox{margin-left:.8rem;}
+.list-tmpl .inner.link:after{ content: "";position: absolute;right: 0.3rem;
+z-index: 5;width:0.15rem; height: 0.15rem;top: 50%;
+border: solid #999; border-width:0.02rem 0.02rem 0 0;margin-top: -0.05rem; transform: rotate(45deg) translateY(-50%);}
+.list-tmpl .inner.noarrow:after{display:none;}
+.list-tmpl .inner-text textarea{text-align:right;}
+.list-tmpl .inner-text input::-webkit-input-placeholder,
+.list-tmpl .inner-text textarea::-webkit-input-placeholder{direction:rtl;}
+.list-tmpl .block.inner {display: block;}
+.list-tmpl .item {margin:0.34rem 0;}
+.list-tmpl .item span{ margin-right:0.18rem;}
+/*** 我的组织 发布活动 **/
+.list-tmpl .inner-text .upload-file{display:inline-block;font-size:.26rem;color:#ccc;}
+.list-tmpl .inner-text .upload-file input[type=file]{margin:0;height:100%;}
+.activity-preview {width: 0.5rem; height: 0.5rem; display: inline-block;margin: 0; vertical-align: middle;margin-right: 0.12rem;border:1px solid #dedede;}
+/** 活动列表 **/
+.activity-grid{ overflow: hidden;}
+.activity-grid ul{margin-right: -1px; }
+.activity-grid ul::after{ clear: both; display: block; content: "";height: 0;}
+.activity-grid li{font-size: 0; float: left;width: 50%; display: table; border: solid #dedede;border-width:0 1px 1px 0; }
+.activity-grid .item{ display: inline-block; width: 100%;padding: 0.45rem 0; padding-left: 0.3rem;}
+.activity-grid .icon,
+.activity-grid .inner {display: table-cell; vertical-align: middle;}
+.activity-grid img {width: 0.78rem; height: 0.78rem;margin-right: 0.3rem;}
+.activity-grid h2{color: #333; font-size: 0.3rem;margin-bottom: 0.15rem;}
+.activity-grid p{ color: #b3b3b3; font-size: 0.24rem;}
+
+.activity-list { margin: -0.3rem;}
+.activity-list li{border-bottom: solid 1px #dedede;padding: 0.3rem;}
+.activity-list .bottom { color: #999; margin-top:0.25rem;margin-left: -0.25rem;}
+.activity-list li img {display: block; width: 100%;}
+.activity-list .bottom .status-triangle {margin-top:-0.25rem;}
+
+.activity-list span{margin-left:0.25rem;}
+.activity-list .icon {margin-right:0.1rem;}
+.activity-list .info { position: relative;padding-right:1rem; display: inline-block; color: #333; font-size: 0.3rem; margin-top:0.3rem; }
+.activity-list .flag .icon{margin: 0;}
+.activity-list .flag {position: absolute;right: 1.2rem;top:-.1rem;}
+.activity-list .info .status { position: absolute;top: -30%;left: 0.3rem;}
+.xwactivity-head .icon{margin-right: 0.09rem;}
+
+/***  公益秀 详情 ***/
+.volunteer-info {text-align: center;}
+.volunteer-info dl{font-size: 0.28rem; text-align: left;}
+.volunteer-info dt{text-indent: 0.2rem;}
+.volunteer-info dd{margin-bottom: 0.6rem;}
+.volunteer-info h1{font-size: 0.3rem;}
+.volunteer-info .info {margin: 0.45rem auto; color: #999;}
+.volunteer-info .info span {margin-right: 0.4rem;}
+.volunteer-info .icon {margin-right: 0.1rem;}
+.volunteer-info .con{font-size:.28rem!important;line-height:1.5!important;text-align:left;}
+.volunteer-info .con p{margin:.2rem 0;}
+.volunteer-info .con div{width:auto!important;}
+.volunteer-info .con img{max-width:100%!important;height:auto!important;}
+
+/* 公益详情列表1 */
+.title-grid {display: table;margin-bottom:.15rem;}
+.title-grid .preview,.title-grid dd{display: table-cell; vertical-align: middle;}
+.title-grid dd{padding-left: 0.2rem;}
+.title-grid dd .title{color: #353131; font-size: 0.3rem;}
+.title-grid dd .info{color: #9e9a9a; font-size: 0.24rem;}
+.title-grid .preview img{width: 0.8rem;height: 0.8rem; border-radius: 50%;}
+
+.volunteers-show .title-grid {margin-top: 0.3rem;}
+.volunteers-show .brief {line-height: 0.45rem; margin-bottom: 0.15rem; color: #353131;font-size: 0.3rem;}
+.volunteers-show .icon { vertical-align: initial;}
+.volunteers-show .btn{ padding:0 0.3rem;}
+.volunteers-show .interact{ float: right;}
+.volunteers-show .bd{padding: 0 0.3rem;}
+.volunteers-show .time {color:#9b9797; margin: 0.3rem 0;}
+.volunteers-show .time:after{ clear: both;content: "";display: block;}
+
+.img-list{font-size: 0;margin: 0 -1.5%;}
+.img-list li{width: 30%; font-size: 0.3rem; overflow: hidden; position: relative; margin: 0 1.5%;display: inline-block;}
+.img-list .more::before {content: "";position: absolute; top:0;left:0;width:100%;height: 100%;background:rgba(255, 255, 255, 0.7);}
+.img-list a {position: absolute;left: 50%;top: 50%; text-align: center; z-index: 1;width: 1.08rem; height: 1.08rem; transform: translate(-50%,-50%);line-height: 1.08rem; background-color: #438ed8; color: #fff; border-radius: 50%; }
+
+/** 志愿者交互  点赞 **/
+.interact-box {background-color: #fafafa;margin: 0 -0.3rem; padding: 0.3rem 0.3rem 0 0.3rem;border-top: solid 1px #f5f5f5;border-bottom: solid 0.14rem #f5f5f5;}
+.interact-praise{display: table;width: 100%;}
+.interact-praise .inner,.interact-praise span{display: table-cell;}
+.interact-praise span{vertical-align: top; line-height: 0.6rem;}
+.interact-praise img{width:0.6rem;height: 0.6rem;border-width: 0.3rem; margin: 0.06rem;}
+/** 志愿者交互  评论 **/
+.interact-dialog {margin: 0.3rem -0.3rem 0 -0.3rem;padding:0.3rem; border: solid #dfdddd; border-width:1px 0; }
+.interact-dialog dl{display: flex;width:100%; text-align: left;}
+.interact-dialog dt span{color: #5d9adb;white-space: nowrap;}
+.interact-dialog dd{flex: 1;color: #9b9797; position: relative;padding-right: 0.5rem;}
+.interact-dialog .icon-close{position: absolute;top: 0;right: 0;}
+
+/** 人员评价 **/
+.evaluate-box{border-bottom: 0;}
+.evaluate-box table{width:100%;}
+.evaluate-box tr + tr th,
+.evaluate-box tr + tr td{padding-top: 0.6rem;}
+.evaluate-box th{white-space: nowrap;vertical-align: top; text-align: left; }
+.evaluate-box td {padding-left:0.2rem;}
+.evaluate-box h2 { color: #333;font-size:0.3rem;line-height: 0.58rem; font-weight: normal;}
+.evaluate-box .inner { display: inline-block; text-align: left;}
+.evaluate-box .btn{ margin: auto;background: #fff; margin-left:0.05rem;margin-bottom:0.1rem; color: #666;padding:0.1rem 0.2rem; border-radius: 0.29rem;height: 0.58rem;}
+.evaluate-box .btn.cur { background: #d8eeff;}
+.evaluate-batch{ background: #f5f5f5; font-size: 0.3rem; padding-bottom: 0;}
+
+/** 消息中心 **/
+.msg-center{margin-top:-0.3rem;margin-right: -0.3rem;}
+.msg-center li + li { border-top:solid 1px #dedede;}
+.msg-center li {position: relative; height: 1.6rem;}
+.msg-center a {width:100%; padding:0.3rem  1rem 0.3rem 1.26rem; display:block;}
+.msg-center li:before {content: ""; position: absolute; top: 0.32rem; left: 0; width: 0.9rem; height: 0.9rem; background: url("../img/icon-mail-off.png") no-repeat; background-size: 100%;}
+.msg-center li.cur:before { background: url("../img/icon-mail.png") no-repeat; background-size: 100%;}
+.msg-center li.cur:after { content: ""; position: absolute;bottom: 0.5rem;right: 0.3rem;  width: 0.2rem;  height: 0.2rem;  background: #e94911;border-radius: 50%;}
+.msg-center  h3{font-size: 0.3rem;}
+.msg-center  p{font-size: 0.26rem;}
+.msg-center  h3,
+.msg-center  p {overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.msg-center .time {position: absolute;color:#999; font-size: 0.24rem; display: inline-block; right: 0.3rem; top: 0.3rem; line-height: 0.4rem;}
+/** 个人技能 **/
+.my-skill .bd{padding-left:0.3rem;}
+.my-skill .list-tmpl{margin-right: 0;}
+.my-skill li{position: relative;}
+.my-skill li .checkbox span,
+.my-skill li .radiobox span{display:block;}
+/** 我的资料 **/
+.myfile .inner-text input {text-align: right;}
+.myfile .bd{padding-bottom: 0;}
+.select-box {position: relative;padding-top: 0.3rem;text-align: left;}
+.select-box .btn-info {margin-right: 0.1rem;margin-bottom: 0.12rem;display: inline-block;font-size:.26rem;}
+.select-box .btn-info.cur { background-color: #cbe3f6;color: #fff;}
