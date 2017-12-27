@@ -50,7 +50,7 @@
 			</list>
 		</property>
 	</bean>
-	<bean id="WEBApp" class="com.coding.traning.web.common.WEBApp"
+	<bean id="WEBApp" class="com.coding.web.common.WEBApp"
 		factory-method="getWEBApp" lazy-init="false">
 		<property name="pros">
 			<map>

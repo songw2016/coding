@@ -1,6 +1,6 @@
 package com.coding.biz.dao;
 
-import com.coding.traning.common.mail.MailSenderInfo;
+import com.coding.common.mail.MailSenderInfo;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

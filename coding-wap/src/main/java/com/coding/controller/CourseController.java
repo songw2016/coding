@@ -1,7 +1,7 @@
 package com.coding.controller;
 
-import com.coding.traning.biz.service.CourseService;
-import com.coding.traning.model.HandlerResult;
+import com.coding.biz.service.CourseService;
+import com.coding.model.HandlerResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

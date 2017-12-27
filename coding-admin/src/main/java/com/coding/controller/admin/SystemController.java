@@ -1,8 +1,8 @@
 package com.coding.controller.admin;
 
-import com.coding.traning.biz.service.CodingAdminService;
-import com.coding.traning.common.web.SSOUtils;
-import com.coding.traning.model.HandlerResult;
+import com.coding.biz.service.CodingAdminService;
+import com.coding.common.web.SSOUtils;
+import com.coding.model.HandlerResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

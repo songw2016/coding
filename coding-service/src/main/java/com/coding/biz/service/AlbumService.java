@@ -1,7 +1,7 @@
 package com.coding.biz.service;
 
 import com.coding.biz.dao.AlbumMapper;
-import com.coding.traning.common.mail.MailSenderInfo;
+import com.coding.common.mail.MailSenderInfo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

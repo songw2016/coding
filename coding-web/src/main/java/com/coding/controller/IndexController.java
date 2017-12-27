@@ -1,10 +1,8 @@
 package com.coding.controller;
 
-import com.coding.traning.common.mail.MailSenderInfo;
-import com.coding.traning.common.mail.SimpleMailSender;
-import com.coding.traning.common.utils.HttpUtils;
-import com.coding.traning.common.web.WEBApp;
-import com.coding.traning.model.HandlerResult;
+import com.coding.common.mail.MailSenderInfo;
+import com.coding.common.mail.SimpleMailSender;
+import com.coding.model.HandlerResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;

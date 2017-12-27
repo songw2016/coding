@@ -1,12 +1,12 @@
 package com.coding.controller;
 
-import com.coding.traning.biz.service.AlbumService;
-import com.coding.traning.common.mail.MailSenderInfo;
-import com.coding.traning.common.mail.SimpleMailSender;
-import com.coding.traning.common.utils.HttpUtils;
-import com.coding.traning.common.web.WEBApp;
-import com.coding.traning.model.HandlerResult;
-import com.coding.traning.model.UploadPicParam;
+import com.coding.biz.service.AlbumService;
+import com.coding.common.mail.MailSenderInfo;
+import com.coding.common.mail.SimpleMailSender;
+import com.coding.common.utils.HttpUtils;
+import com.coding.common.web.WEBApp;
+import com.coding.model.HandlerResult;
+import com.coding.model.UploadPicParam;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

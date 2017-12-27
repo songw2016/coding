@@ -6,7 +6,7 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.domain.AlipayTradeWapPayModel;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradeWapPayRequest;
-import com.coding.traning.alipay.config.AlipayConfig;
+import com.coding.alipay.config.AlipayConfig;
 import com.google.common.collect.Maps;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
