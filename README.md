@@ -15,15 +15,13 @@
 6. apache maven
 7. tortoise svn 64位
 
-#代码规范
+# 代码规范
 目录
-````
-Java规范(#JavaName)
-Javascript规范(#JavascriptName)
-Sql规范(#SqlName)
-````
+### 1.Java规范(#JavaName)
+### 2.Javascript规范(#JavascriptName)
+### 3.Sql规范(#SqlName)
 
-#<a name="JavaName">Java规范</a>
+## <a name="JavaName">Java规范</a>
 
 #### 1.【强制】 代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。
 说明：正确的英文拼写和语法可以让阅读者易于理解，避免歧义。注意，即使纯拼音命名方式也要避免采用。不会的单词请[百度翻译](http://fanyi.baidu.com/)。    
@@ -265,7 +263,7 @@ while (it.hasNext()) {
 ---
 #### 3. 【参考】可以使用 warn 日志级别来记录用户输入参数错误的情况，避免用户投诉时，无所适从。注意日志输出的级别，error 级别只记录系统逻辑出错、异常等重要的错误信息。如非必要，请不要在此场景打出 error 级别。
 
-#<a name="JavascriptName">Javascript规范</a>
+## <a name="JavascriptName">Javascript规范</a>
 
 规范参考：
 - [standard](https://github.com/feross/standard)
@@ -954,7 +952,7 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     })();
     ```
 
-#<a name="SqlName">Sql规范</a>
+## <a name="SqlName">Sql规范</a>
 
 1. [基本规范](#1-基本规范)
 2. [性能约束](#2-性能约束)
