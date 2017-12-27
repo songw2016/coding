@@ -17,9 +17,9 @@
 
 # 代码规范
 目录
-### 1.Java规范(#JavaName)
-### 2.Javascript规范(#JavascriptName)
-### 3.Sql规范(#SqlName)
+### [Java规范](#JavaName)
+### [Javascript规范](#JavascriptName)
+### [Sql规范](#SqlName)
 
 ## <a name="JavaName">Java规范</a>
 
