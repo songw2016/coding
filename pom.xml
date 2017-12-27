@@ -28,7 +28,6 @@
         <module>coding-admin</module>
         <module>coding-web</module>
         <module>coding-wap</module>
-        <module>coding-sso</module>
     </modules>
 
     <properties>
