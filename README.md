@@ -16,7 +16,15 @@
 7. tortoise svn 64位
 
 #代码规范
-#Java规范
+目录
+````
+Java规范(#JavaName)
+Javascript规范(#JavascriptName)
+Sql规范(#SqlName)
+````
+
+#<a name="JavaName">Java规范</a>
+
 #### 1.【强制】 代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。
 说明：正确的英文拼写和语法可以让阅读者易于理解，避免歧义。注意，即使纯拼音命名方式也要避免采用。不会的单词请[百度翻译](http://fanyi.baidu.com/)。    
 反例： `DaZhePromotion [打折] / getPingfenByName() [评分] / int 某变量 = 3`   
@@ -257,7 +265,7 @@ while (it.hasNext()) {
 ---
 #### 3. 【参考】可以使用 warn 日志级别来记录用户输入参数错误的情况，避免用户投诉时，无所适从。注意日志输出的级别，error 级别只记录系统逻辑出错、异常等重要的错误信息。如非必要，请不要在此场景打出 error 级别。
 
-#Javascript规范
+#<a name="JavascriptName">Javascript规范</a>
 
 规范参考：
 - [standard](https://github.com/feross/standard)
@@ -311,7 +319,7 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     ```javascript
     // bad
     function q() {
-      // ...stuff...
+      // // 一大坨代码stuff// 一大坨代码
     }
 
     // good
@@ -324,12 +332,12 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     // bad 
     var validate = function(el) {
         this.el = el;
-        ...
+        // 一大坨代码
     }; 
     // good
     var Validate = function(el) {
         this.el = el;
-        ...
+        // 一大坨代码
     };
     
     ```
@@ -411,9 +419,7 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     // bad 
     function render() {
         // 一大坨渲染列表的代码
-        ...
         // 一大坨渲染公告的代码
-        ...
     };
     // good
     function render() {
@@ -431,16 +437,16 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     ```javascript
     // bad 
     function showDialog(el, data, target, className, isShowClose) {
-        ....
+        // 一大坨代码
     };
 
     // good
     function showDialog(option) {
-        ....
+        // 一大坨代码
     };
     showDialog({
         el: '#el', 
-        target:: '#target', 
+        target: '#target', 
         className: 'className', 
         isShowClose: true
     });
@@ -449,25 +455,24 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     ```javascript
     // bad 
     !function iife() {
-        ...
+        // 一大坨代码
     }(); // 返回true
     +function iife() {
-        ...
+        // 一大坨代码
     }(); // 返回NaN
     -function iife() {
-        ...
+        // 一大坨代码
     }(); // 返回NaN
 
     // good
     (function iife() {
-        ...
+        // 一大坨代码
     })();
     ```
 - 使用对象字面量给构造函数的原型对象添加属性，并指定`constructor`。
     ```javascript
     // bad 
     var Dog = function() {
-        ....
     };
     Dog.prototype.eat = function() {
 
@@ -481,7 +486,6 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
 
     // good
     var Dog = function() {
-        ....
     };
     Dog.prototype = {
         constructro: Dog,
@@ -528,11 +532,10 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
 
     // bad 
     for(i = 0; i < arry.length; i++){
-        ...
+        //
     };
     // good
     for(i = 0, len = arry.length; i < len; i++){
-        ...
     }
     ```
 - 迭代聚合对象时，缓存当前值;
@@ -566,13 +569,13 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     // bad 
     for(i = 0, len = arry.length; i < len; i++){
         if(arry[i].id){
-            ...
+            // 一大坨代码
         }
     };
     // good
     for(i = 0, len = arry.length; i < len; i++){
         if(arry[i].id){
-            ...
+            // 一大坨代码
             break;
         }
     };
@@ -586,29 +589,25 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
 
     // bad 
     for(var i = 0, len = arry.length; i < len; i++){
-        if(...){
+        if(i>5){
             // 一大坨逻辑
-            ....
-            ....
         }else{
             // 一大坨逻辑
-            ....
-            ....
         }
     };
     // good
     for(var i = 0, len = arry.length; i < len; i++){
-        if(...){
+        if(i<10){
             doSomething();
         }else{
             doAnotherthing();
         }
     };
     function doSomething() {
-        ...
+        // 一大坨代码
     };
     function doAnotherthing() {
-        ...
+        // 一大坨代码
     };
     ```
 
@@ -661,28 +660,38 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     ```javascript
     //bad 
     /* 初始化项目 */
-    function init() {...}
+    function init() {
+      // 一大坨代码
+    }
     //初始化项目
-    function init() {...}
-
+    function init() {
+      // 一大坨代码
+    }
     // good
     // 初始化项目
-    function init() {...}
+    function init() { 
+      // 一大坨代码
+    }
     ```
 - 多行注释。
     ```javascript
     //bad 
-    function init() {...}
+    function init() {
+      // 一大坨代码
+    }
     // 初始化项目
     // 并获取数据
-    function init() {...}
-
+    function init() {
+      // 一大坨代码
+    }
     // good
     /* 
       初始化项目 
       并获取数据
     */
-    function init() {...}
+    function init() {
+      // 一大坨代码  
+    }
     ```
 
 **[⬆ 回到顶部](#contents)**
@@ -773,10 +782,10 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     }
 
     // bad
-    function () { return false; }
+    function nameBad() { return false; }
 
     // good
-    function () {
+    function nameGood() {
       return false;
     }
     ```
@@ -945,8 +954,7 @@ sublime注释工具: [DocBlockr](https://github.com/Warin/Sublime/tree/master/Do
     })();
     ```
 
-#Sql规范
-
+#<a name="SqlName">Sql规范</a>
 
 1. [基本规范](#1-基本规范)
 2. [性能约束](#2-性能约束)
