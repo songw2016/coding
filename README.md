@@ -18,7 +18,7 @@
 
 # 代码规范目录
 
-##### [Java规范](Java.md)
-##### [Javascript规范](Javascript.md)
-##### [Sql规范](Sql.md)
+* [Java规范](Java.md)
+* [Javascript规范](Javascript.md)
+* [Sql规范](Sql.md)
 
