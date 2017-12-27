@@ -43,7 +43,7 @@
 	</bean>
 
 	<bean id="placeholderConfig"
-		class="com.coding.traning.common.MMPropertyPlaceholderConfigurer">
+		class="MMPropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
 				<value>classpath:app-config.properties</value>

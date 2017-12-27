@@ -1,1 +1,22 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea/
+coding-admin/coding-admin.iml
+coding-admin/src/test/
+coding-admin/target/
+coding-common/coding-common.iml
+coding-common/src/test/
+coding-java.iml
+coding-model/coding-model.iml
+coding-model/src/test/
+coding-res/coding-res.iml
+coding-res/target/
+coding-service/coding-service.iml
+coding-service/src/test/
+coding-service/target/
+coding-wap/coding-wap.iml
+coding-wap/src/test/
+coding-wap/target/
+coding-web/coding-web.iml
+coding-web/src/test/
+coding-web/target/
+coding.iml
