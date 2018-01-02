@@ -43,14 +43,14 @@
 	</bean>
 
 	<bean id="placeholderConfig"
-		class="MMPropertyPlaceholderConfigurer">
+		class="com.coding.common.MMPropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
 				<value>classpath:app-config.properties</value>
 			</list>
 		</property>
 	</bean>
-	<bean id="WEBApp" class="WEBApp"
+	<bean id="WEBApp" class="com.coding.common.web.WEBApp"
 		factory-method="getWEBApp" lazy-init="false">
 		<property name="pros">
 			<map>
