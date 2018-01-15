@@ -37,6 +37,29 @@ public class IndexController {
     public String index(Model model) {
         return "index";
     }
+    /**
+     * 联系我们
+     */
+    @RequestMapping(value = "/contact")
+    public String contact(Model model) {
+        return "contact";
+    }
+
+    /**
+     * 　宴会聚餐
+     */
+    @RequestMapping(value = "/agritainment")
+    public String agritainment(Model model) {
+        return "agritainment";
+    }
+
+    /**
+     *　 快乐小镇
+     */
+    @RequestMapping(value = "/happyvalley")
+    public String happyvalley(Model model) {
+        return "happyvalley";
+    }
 
 
     /**

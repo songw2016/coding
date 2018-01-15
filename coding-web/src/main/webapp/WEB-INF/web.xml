@@ -17,12 +17,12 @@
     </listener>
 
     <listener>
-        <listener-class>ApplicationContextListener</listener-class>
+        <listener-class>com.coding.common.web.ApplicationContextListener</listener-class>
     </listener>
 
     <filter>
         <filter-name>AdminTokenFilter</filter-name>
-        <filter-class>AdminTokenFilter</filter-class>
+        <filter-class>com.coding.common.web.AdminTokenFilter</filter-class>
         <init-param>
             <param-name>excludeURL</param-name>
             <param-value>

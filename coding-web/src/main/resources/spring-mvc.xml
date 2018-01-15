@@ -8,7 +8,7 @@
 	default-lazy-init="true">
 	<mvc:view-controller path="/" view-name="redirect:/index" />
 	<!-- 自动扫描且只扫描@Controller -->
-	<context:component-scan base-package="com.coding.traning.controller"
+	<context:component-scan base-package="com.coding.controller"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -38,7 +38,7 @@
 	</bean>
 	<!-- 容器默认的DefaultServletHandler处理 所有静态内容与无RequestMapping处理的URL -->
 	<mvc:default-servlet-handler />
-	<mvc:resources mapping="/assets/**" location="/assets/" />
+	<mvc:resources mapping="/assets/**" location="classpath:/assets/" />
 	<!-- 定义JSP文件的位置 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
